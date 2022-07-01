@@ -7,7 +7,7 @@ from .models import Post
 
 # Create your views here.
 
-class PostListview (ListView):
+class PostListView (ListView):
     model = Post
 
 class PostCreateView(CreateView):
@@ -27,4 +27,3 @@ class PostDeleteView (DeleteView):
     model = Post
     fields = "__all__"
     success_url = reverse_lazy("blog:all")
-    
